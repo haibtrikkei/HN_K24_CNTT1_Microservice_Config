@@ -20,3 +20,12 @@ spring:
 server:
     port: 8086
 
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+        should-unregister-on-shutdown: true
+    instance:
+        prefer-ip-address: true
